@@ -1,0 +1,19 @@
+.nav-bar-header {
+    font-size: 50px;
+}
+
+.list-item {
+    padding-top: 10px;
+}
+
+.list-item:hover {
+    cursor: pointer;
+}
+
+.active {
+    padding-top: 10px;
+}
+
+.active::marker {
+    color: #F15025;
+}

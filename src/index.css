@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: "Noto Sans Mono", monospace;
+    color: #212227;
+    background-image: linear-gradient(to bottom, #FFBAD4 18%, #9ad4db 38%, #D7D3FF 90%);
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.nav-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.left-bar-container {
+    /* max-width: 360px; */
+    position: sticky;
+    top: 8vh;
+    /* bottom: 8vh;; */
+    height: 82vh;
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: solid red; */
+}
+
+section {
+    max-width: 650px;
+    padding-top: 10vh;
+    /* border: solid black; */
+}

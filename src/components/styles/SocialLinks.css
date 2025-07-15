@@ -1,0 +1,17 @@
+.social-link-icon {
+    font-size: 30px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.social-link-icon:link {
+    color: rgb(241, 80, 37, 0.4);
+}
+
+.social-link-icon:visited {
+    color: rgb(241, 80, 37, 0.4);
+}
+
+.social-link-icon:hover {
+    color: rgb(241, 80, 37, 1);
+}

@@ -46,8 +46,10 @@
 
 .date-div {
     text-wrap: nowrap;
+    text-align: right;
 }
 
 .date-text {
     margin-top: 0px;
+    width: 174px;
 }

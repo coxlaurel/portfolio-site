@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    /* border: solid black; */
 }
 
 .left-bar-container {
@@ -25,7 +26,8 @@ body {
     top: 8vh;
     /* bottom: 8vh;; */
     height: 82vh;
-    flex-shrink: 0;
+    margin-right: 50px;
+    /* flex-shrink: 0; */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -37,4 +39,24 @@ section {
     max-width: 650px;
     padding-top: 10vh;
     /* border: solid black; */
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* border: solid red; */
+    }
+
+    .left-bar-container {
+        /* max-width: 360px; */
+        position: relative;
+        height: fit-content;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* border: solid red; */
+    }
 }

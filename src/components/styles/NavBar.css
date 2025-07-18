@@ -17,3 +17,9 @@
 .active::marker {
     color: #F15025;
 }
+
+@media only screen and (max-width: 1200px) {
+    .list-item {
+        display: none;
+    }
+}

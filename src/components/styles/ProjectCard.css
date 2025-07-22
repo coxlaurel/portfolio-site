@@ -54,6 +54,18 @@
     width: 174px;
 }
 
+.card-link-icon:visited {
+    color: rgb(241, 80, 37, 0.4);
+}
+
+.card-link-icon:link {
+    color: rgb(241, 80, 37, 0.4);
+}
+
+.card-link-icon:hover {
+    color: rgb(241, 80, 37);
+}
+
 @media only screen and (max-width: 1200px) {
     .tag {
         text-align: center;

@@ -1,4 +1,5 @@
 import './styles/ProjectCard.css';
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 interface Props {
     id?: string,
@@ -6,6 +7,7 @@ interface Props {
     cardType: string[];
     caption: string;
     tags: string[];
+    link: string;
 }
 
 function CardType({ cardType }: { cardType: string[] }) {
@@ -24,12 +26,22 @@ function CardType({ cardType }: { cardType: string[] }) {
     }
 }
 
-function ProjectCard({ heading, cardType, caption, tags }: Props){
+function Link({ link }: { link: string}) {
+    if (link != "None") {
+        return <a className="card-link-icon" target="_blank" href={link}><FaArrowUpRightFromSquare size={18}/></a>
+    } else {
+        return <></>
+    }
+}
+
+function ProjectCard({ heading, cardType, caption, tags, link }: Props){
     return <>
         <div className='card-div'>
             <CardType cardType={cardType} />
             <div className='content-div'>
-                <h1 className='card-content-head'>{heading}</h1>
+                <h1 className='card-content-head'>{heading}&nbsp;
+                    <Link link={link} />
+                </h1>
                 <p className='card-content-body'>{caption}</p>
                 <div className="tags-container">
                     {tags.map((tag) => (

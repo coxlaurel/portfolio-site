@@ -21,6 +21,11 @@
     /* border: solid black; */
 }
 
+.card-content-subhead {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
 .card-content-body {
     margin-top: 0px;
     margin-bottom: 0;
@@ -46,7 +51,7 @@
 
 .date-div {
     text-wrap: nowrap;
-    text-align: right;
+    text-align: left;
 }
 
 .date-text {

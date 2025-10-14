@@ -4,6 +4,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 interface Props {
     id?: string,
     heading: string;
+    subHeading: string;
     cardType: string[];
     caption: string;
     tags: string[];
@@ -34,14 +35,23 @@ function Link({ link }: { link: string}) {
     }
 }
 
-function ProjectCard({ heading, cardType, caption, tags, link }: Props){
+function SubHeader({ subHeading }: { subHeading: string}) {
+    if (subHeading != "None") {
+        return <h3 className='card-content-subhead'>{subHeading}</h3>
+    } else {
+        return <></>
+    }
+}
+
+function ProjectCard({ heading, subHeading, cardType, caption, tags, link }: Props){
     return <>
         <div className='card-div'>
             <CardType cardType={cardType} />
             <div className='content-div'>
-                <h1 className='card-content-head'>{heading}&nbsp;
+                <h2 className='card-content-head'>{heading}&nbsp;
                     <Link link={link} />
-                </h1>
+                </h2>
+                <SubHeader subHeading={subHeading}/>
                 <p className='card-content-body'>{caption}</p>
                 <div className="tags-container">
                     {tags.map((tag) => (
